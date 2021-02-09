@@ -1,1 +1,3 @@
 Hopefully this is my final Git skill's test
+
+P.S This is actually really fun, need to learn more about these sort of worklows
