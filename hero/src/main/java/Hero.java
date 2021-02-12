@@ -4,15 +4,11 @@ import com.googlecode.lanterna.screen.Screen;
 
 import java.io.IOException;
 
-public class Hero {
+public class Hero extends Element{
 
-    private Position position = new Position();
-
-    public Hero(){
-        position.setX(10);
-        position.setY(10);
+    public Hero(int x, int y) {
+        super(x, y);
     }
-
     public int getY() {
         return position.getY();
     }
@@ -34,7 +30,7 @@ public class Hero {
     }
 
     public Position MoveUp(){
-       ;return new Position(position.getX(), position.getY() - 1);
+       return new Position(position.getX(), position.getY() - 1);
     }
 
     public Position MoveDown(){
