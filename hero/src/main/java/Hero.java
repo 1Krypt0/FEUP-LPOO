@@ -1,32 +1,11 @@
 import com.googlecode.lanterna.*;
 import com.googlecode.lanterna.graphics.TextGraphics;
-import com.googlecode.lanterna.screen.Screen;
 
-import java.io.IOException;
 
 public class Hero extends Element{
 
     public Hero(int x, int y) {
         super(x, y);
-    }
-    public int getY() {
-        return position.getY();
-    }
-
-    public void setY(int y) {
-        this.position.setY(y);
-    }
-
-    public int getX() {
-        return position.getX();
-    }
-
-    public void setX(int x) {
-        this.position.setX(x);
-    }
-
-    public void setPosition(Position pos){
-        this.position = pos;
     }
 
     public Position MoveUp(){
@@ -45,8 +24,8 @@ public class Hero extends Element{
         return new Position(position.getX() + 1, position.getY());
     }
 
-    public void draw(TextGraphics graphics) throws IOException {
-        graphics.setForegroundColor(TextColor.Factory.fromString("#FFFF33"));
+    public void draw(TextGraphics graphics) {
+        graphics.setForegroundColor(TextColor.Factory.fromString("#0E5135"));
         graphics.enableModifiers(SGR.BOLD);
         graphics.putString(new TerminalPosition(position.getX(), position.getY()), "X");
     }

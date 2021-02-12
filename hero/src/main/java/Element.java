@@ -1,7 +1,5 @@
 import com.googlecode.lanterna.graphics.TextGraphics;
 
-import java.io.IOException;
-
 public abstract class Element {
     protected Position position = new Position();
 
@@ -18,5 +16,5 @@ public abstract class Element {
         this.position = position;
     }
 
-    public abstract void draw(TextGraphics graphics) throws IOException;
+    public abstract void draw(TextGraphics graphics);
 }

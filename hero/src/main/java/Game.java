@@ -1,3 +1,4 @@
+import com.googlecode.lanterna.TerminalSize;
 import com.googlecode.lanterna.input.KeyType;
 import com.googlecode.lanterna.screen.Screen;
 import com.googlecode.lanterna.screen.TerminalScreen;
@@ -10,15 +11,17 @@ import java.io.IOException;
 public class Game {
 
     private Screen screen;
-    private Arena arena = new Arena(200, 200);
+    private Arena arena = new Arena(150, 50);
 
     public Game(){
         try {
-            Terminal terminal = new DefaultTerminalFactory().createTerminal();
+            Terminal terminal = new DefaultTerminalFactory().setInitialTerminalSize(new TerminalSize(arena.getWidth(), arena.getHeight())).createTerminal();
             screen = new TerminalScreen(terminal);
+
             screen.setCursorPosition(null);
             screen.startScreen();
             screen.doResizeIfNecessary();
+
         } catch (IOException e){
             e.printStackTrace();
         }
@@ -35,15 +38,15 @@ public class Game {
             draw();
             KeyStroke key = screen.readInput();
             processKey(key);
-            if(key.getKeyType() == KeyType.EOF){
+            if(key.getKeyType() == KeyType.Character && key.getCharacter() == 'q')
+                screen.close();
+            if(key.getKeyType() == KeyType.EOF)
                 break;
-            }
         }
     }
 
 
     private void processKey(KeyStroke key) throws IOException{
         arena.processKey(key);
-        if(key.getKeyType() == KeyType.Character && key.getCharacter() == 'q') screen.close();
     }
 }
