@@ -1,3 +1,7 @@
+import com.googlecode.lanterna.TerminalPosition;
+import com.googlecode.lanterna.TerminalSize;
+import com.googlecode.lanterna.TextColor;
+import com.googlecode.lanterna.graphics.TextGraphics;
 import com.googlecode.lanterna.input.KeyStroke;
 import com.googlecode.lanterna.input.KeyType;
 import com.googlecode.lanterna.screen.Screen;
@@ -9,6 +13,15 @@ public class Arena {
     private int width;
     private int height;
     Hero hero = new Hero();
+
+
+    public int getHeight() {
+        return height;
+    }
+    public int getWidth() {
+        return width;
+    }
+
 
     public Arena(int width, int height){
         this.height = height;
@@ -22,7 +35,9 @@ public class Arena {
         if(key.getKeyType() == KeyType.ArrowRight) moveHero(hero.MoveRight());
     }
 
-    public void draw(Screen screen) throws IOException {
+    public void draw(TextGraphics screen) throws IOException {
+        screen.setBackgroundColor(TextColor.Factory.fromString("#8C2D19"));
+        screen.fillRectangle( new TerminalPosition(0, 0), new TerminalSize(getWidth(), getHeight()), ' ');
         hero.draw(screen);
     }
 

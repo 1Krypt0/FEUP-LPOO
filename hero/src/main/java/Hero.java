@@ -1,4 +1,5 @@
-import com.googlecode.lanterna.TextCharacter;
+import com.googlecode.lanterna.*;
+import com.googlecode.lanterna.graphics.TextGraphics;
 import com.googlecode.lanterna.screen.Screen;
 
 import java.io.IOException;
@@ -48,7 +49,9 @@ public class Hero {
         return new Position(position.getX() + 1, position.getY());
     }
 
-    public void draw(Screen graphics) throws IOException {
-        graphics.setCharacter(getX(), getY(), new TextCharacter('X'));
+    public void draw(TextGraphics graphics) throws IOException {
+        graphics.setForegroundColor(TextColor.Factory.fromString("#FFFF33"));
+        graphics.enableModifiers(SGR.BOLD);
+        graphics.putString(new TerminalPosition(position.getX(), position.getY()), "X");
     }
 }
