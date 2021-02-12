@@ -15,7 +15,6 @@ public class Arena {
     private int width;
     private int height;
 
-
     private List<Wall> walls;
     private List<Coin> coins;
     private List<Monster> monsters;

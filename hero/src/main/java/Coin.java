@@ -16,5 +16,4 @@ public class Coin extends Element{
         graphics.enableModifiers(SGR.BOLD);
         graphics.putString(new TerminalPosition(position.getX(), position.getY()), "O");
     }
-
 }
