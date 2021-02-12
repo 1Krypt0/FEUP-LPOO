@@ -36,6 +36,12 @@ public class Game {
     public void run() throws IOException {
         while (true){
             draw();
+            if (arena.verifyMonsterCollisions()){
+                screen.close(); break;
+            }
+            if (arena.noMoreCoins()){
+                screen.close(); break;
+            }
             KeyStroke key = screen.readInput();
             processKey(key);
             if(key.getKeyType() == KeyType.Character && key.getCharacter() == 'q')

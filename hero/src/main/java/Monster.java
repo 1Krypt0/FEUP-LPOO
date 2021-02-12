@@ -40,6 +40,6 @@ public class Monster extends Element{
     public void draw(TextGraphics graphics){
         graphics.setForegroundColor(TextColor.Factory.fromString("#494B4B"));
         graphics.enableModifiers(SGR.BOLD);
-        graphics.putString(new TerminalPosition(position.getX(), position.getY()), " X");
+        graphics.putString(new TerminalPosition(position.getX(), position.getY()), "Z");
     }
 }
