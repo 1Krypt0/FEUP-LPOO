@@ -11,7 +11,7 @@ import java.io.IOException;
 public class Game {
 
     private Screen screen;
-    private Arena arena = new Arena(150, 50);
+    private final Arena arena = new Arena(125, 50);
 
     public Game(){
         try {
@@ -36,7 +36,8 @@ public class Game {
     public void run() throws IOException {
         while (true){
             draw();
-            if (arena.verifyMonsterCollisions()){
+            if (arena.getHero().getLife() == 0){
+                System.out.println("You lost! Sorry..");
                 screen.close(); break;
             }
             if (arena.noMoreCoins()){
@@ -52,7 +53,7 @@ public class Game {
     }
 
 
-    private void processKey(KeyStroke key) throws IOException{
+    private void processKey(KeyStroke key) {
         arena.processKey(key);
     }
 }
