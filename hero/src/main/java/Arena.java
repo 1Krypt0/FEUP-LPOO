@@ -92,11 +92,13 @@ public class Arena {
     private List<Coin> createCoins() {
         Random random = new Random();
         Position position = new Position(0, 0);
-        boolean collision = false;
         ArrayList<Coin> coins = new ArrayList<>();
         for (int i = 0; i < 20; i++){
+            boolean collision = false;
             position.setX(random.nextInt(width - 2) + 1);
             position.setY(random.nextInt(height - 2) + 1);
+            if (position.equals(hero.getPosition()))
+                collision = true;
             for (Wall wall: walls){
                 if (position.equals(wall.getPosition())){
                     collision = true;
@@ -113,11 +115,16 @@ public class Arena {
     private List<Monster> createMonsters(){
         Random random = new Random();
         Position position = new Position(0, 0);
-        boolean collision = false;
         ArrayList<Monster> monsters = new ArrayList<>();
+
         for (int i = 0; i < 20; i++){
+            boolean collision = false;
             position.setX(random.nextInt(width - 2) + 1);
             position.setY(random.nextInt(height - 2) + 1);
+
+            if (position.equals(hero.getPosition()))
+                collision = true;
+
             for (Wall wall: walls){
                 if (position.equals(wall.getPosition())){
                     collision = true;
@@ -172,6 +179,7 @@ public class Arena {
             if (wall.getPosition().equals(position)) return false;
         for(Coin coin: coins){
             if(coin.position.equals(position)){
+                hero.setScore(getHero().getScore() + 10);
                 retrieveCoin(coin);
                 break;
             }
@@ -224,6 +232,7 @@ public class Arena {
     public boolean noMoreCoins(){
         if (coins.isEmpty()){
             System.out.println("Congratulations! You won the game! Life is now meaningless");
+            System.out.println("Also, you had a really nice score of " + hero.getScore());
             return true;
         }
         return false;

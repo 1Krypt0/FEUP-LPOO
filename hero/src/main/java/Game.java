@@ -38,6 +38,7 @@ public class Game {
             draw();
             if (arena.getHero().getLife() == 0){
                 System.out.println("You lost! Sorry..");
+                System.out.println("But at least you had a score of " + arena.getHero().getScore());;
                 screen.close(); break;
             }
             if (arena.noMoreCoins()){

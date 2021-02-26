@@ -8,7 +8,17 @@ public class Hero extends Element{
         super(x, y);
     }
 
+    private int score = 0;
+
     private int life = 100;
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
 
     public int getLife() {
         return life;
