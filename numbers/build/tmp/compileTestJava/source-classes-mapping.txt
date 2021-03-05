@@ -1,0 +1,8 @@
+com/aor/numbers/ListAggregatorTest.java
+ com.aor.numbers.ListAggregatorTest
+ com.aor.numbers.ListAggregatorTest$Stub
+com/aor/numbers/ListSorterTest.java
+ com.aor.numbers.ListSorterTest
+com/aor/numbers/ListDeduplicatorTest.java
+ com.aor.numbers.ListDeduplicatorTest
+ com.aor.numbers.ListDeduplicatorTest$Stub

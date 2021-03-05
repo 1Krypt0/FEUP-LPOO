@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aor.numbers.ListAggregatorTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-03-05T16:55:36" hostname="krypt0" time="0.631">
+  <properties/>
+  <testcase name="bugReport7263" classname="com.aor.numbers.ListAggregatorTest" time="0.0"/>
+  <testcase name="bugReport8726" classname="com.aor.numbers.ListAggregatorTest" time="0.001"/>
+  <testcase name="max" classname="com.aor.numbers.ListAggregatorTest" time="0.0"/>
+  <testcase name="min" classname="com.aor.numbers.ListAggregatorTest" time="0.0"/>
+  <testcase name="sum" classname="com.aor.numbers.ListAggregatorTest" time="0.0"/>
+  <testcase name="distinct" classname="com.aor.numbers.ListAggregatorTest" time="0.628"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
