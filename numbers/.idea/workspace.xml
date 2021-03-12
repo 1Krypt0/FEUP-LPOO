@@ -5,12 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1541c6c2-57ef-4143-ad86-3151e9cc04cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/numbers.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aor/numbers/DivisibleByFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aor/numbers/ListFilterer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aor/numbers/PositiveFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/aor/numbers/ListFiltererTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
@@ -21,37 +15,83 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/numbers.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/aor/numbers/IListDeduplicator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/aor/numbers/IListDeduplicator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/aor/numbers/IListSorter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/aor/numbers/IListSorter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/aor/numbers/DivisibleByFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/aor/numbers/DivisibleByFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/aor/numbers/IListDeduplicator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/aor/numbers/IListFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/aor/numbers/IListSorter.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/aor/numbers/ListAggregator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/aor/numbers/ListAggregator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/aor/numbers/ListDeduplicator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/aor/numbers/ListDeduplicator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/aor/numbers/ListFilterer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/aor/numbers/ListFilterer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/aor/numbers/ListSorter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/aor/numbers/ListSorter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/aor/numbers/ListAggregatorTest$Stub.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/aor/numbers/ListAggregatorTest$Stub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/aor/numbers/PositiveFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/aor/numbers/PositiveFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/aor/numbers/ListAggregatorTest$Stub.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/aor/numbers/ListAggregatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/aor/numbers/ListAggregatorTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/aor/numbers/ListDeduplicatorTest$Stub.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/aor/numbers/ListDeduplicatorTest$Stub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/aor/numbers/ListDeduplicatorTest$Stub.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/aor/numbers/ListDeduplicatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/aor/numbers/ListDeduplicatorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/aor/numbers/ListFiltererTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/aor/numbers/ListFiltererTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/aor/numbers/ListSorterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/aor/numbers/ListSorterTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081042/com.aor.numbers/DivisibleByFilter.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081042/com.aor.numbers/ListAggregator.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081042/com.aor.numbers/ListDeduplicator.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081042/com.aor.numbers/ListFilterer.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081042/com.aor.numbers/ListSorter.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081042/com.aor.numbers/PositiveFilter.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081042/com.aor.numbers/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081042/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081042/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081045/com.aor.numbers/DivisibleByFilter.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081045/com.aor.numbers/ListAggregator.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081045/com.aor.numbers/ListDeduplicator.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081045/com.aor.numbers/ListFilterer.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081045/com.aor.numbers/ListSorter.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081045/com.aor.numbers/PositiveFilter.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081045/com.aor.numbers/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081045/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081045/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081048/com.aor.numbers/DivisibleByFilter.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081048/com.aor.numbers/ListAggregator.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081048/com.aor.numbers/ListDeduplicator.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081048/com.aor.numbers/ListFilterer.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081048/com.aor.numbers/ListSorter.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081048/com.aor.numbers/PositiveFilter.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081048/com.aor.numbers/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081048/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/pitest/202103081048/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.aor.numbers.ListAggregatorTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.aor.numbers.ListAggregatorTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.aor.numbers.ListDeduplicatorTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.aor.numbers.ListDeduplicatorTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.aor.numbers.ListFiltererTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.aor.numbers.ListFiltererTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.aor.numbers.ListSorterTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.aor.numbers.ListSorterTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.aor.numbers.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.aor.numbers.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.aor.numbers.ListAggregatorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.aor.numbers.ListAggregatorTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.aor.numbers.ListDeduplicatorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.aor.numbers.ListDeduplicatorTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.aor.numbers.ListFiltererTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.aor.numbers.ListFiltererTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.aor.numbers.ListSorterTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.aor.numbers.ListSorterTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ListFilterer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PositiveFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aor/numbers/DivisibleByFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aor/numbers/DivisibleByFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aor/numbers/ListAggregator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aor/numbers/ListAggregator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aor/numbers/ListDeduplicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aor/numbers/ListDeduplicator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aor/numbers/ListFilterer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aor/numbers/ListFilterer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aor/numbers/ListSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aor/numbers/ListSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aor/numbers/PositiveFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aor/numbers/PositiveFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/aor/numbers/ListAggregatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/aor/numbers/ListAggregatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/aor/numbers/ListDeduplicatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/aor/numbers/ListDeduplicatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/aor/numbers/ListFiltererTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/aor/numbers/ListFiltererTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/aor/numbers/ListSorterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/aor/numbers/ListSorterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +155,6 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunAnythingCache">
@@ -124,7 +163,7 @@
       <command value="gradle :pitest" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.numbers [pitest]">
+  <component name="RunManager" selected="Gradle.Tests in 'com.aor.numbers'">
     <configuration name="Tests in 'com.aor.numbers'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -211,10 +250,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.numbers [pitest]" />
-        <item itemvalue="Gradle.numbers [:pitest]" />
         <item itemvalue="Gradle.Tests in 'com.aor.numbers'" />
         <item itemvalue="Gradle.Tests in 'numbers.test'" />
+        <item itemvalue="Gradle.numbers [pitest]" />
+        <item itemvalue="Gradle.numbers [:pitest]" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +269,7 @@
     <servers />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/numbers$Tests_in__com_aor_numbers_.ic" NAME="Tests in 'com.aor.numbers' Coverage Results" MODIFIED="1615199705846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/numbers$Tests_in__numbers_test_.ic" NAME="Tests in 'numbers.test' Coverage Results" MODIFIED="1614963335593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/numbers$Tests_in__com_aor_numbers_.ic" NAME="Tests in 'com.aor.numbers' Coverage Results" MODIFIED="1615567246206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/numbers$Tests_in__numbers_test_.ic" NAME="Tests in 'numbers.test' Coverage Results" MODIFIED="1615566036921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

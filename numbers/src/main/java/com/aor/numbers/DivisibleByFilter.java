@@ -1,15 +1,15 @@
 package com.aor.numbers;
 
-public class DivisibleByFilter implements IListFilter{
+public class DivisibleByFilter implements GenericListFilter {
 
-    private final int divisor;
+    private final int filter;
 
-    public DivisibleByFilter(Integer num) {
-        this.divisor = num;
+    public DivisibleByFilter(int filter) {
+        this.filter = filter;
     }
 
     @Override
     public boolean accept(Integer number) {
-        return (number % divisor) == 0;
+        return number % filter == 0;
     }
 }

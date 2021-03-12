@@ -1,57 +1,35 @@
 package com.aor.numbers;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-
 public class ListFiltererTest {
-
     @Test
-    public void filterPositive() {
-        List<Integer> list = new ArrayList<>();
+    public void positiveFilter() {
+        List<Integer> list = Arrays.asList(-1 , -3, 0, 1, 2, -5, 3);
+        List<Integer> expected = Arrays.asList(1, 2, 3);
 
-        list.add(-1);
-        list.add(-7);
-        list.add(4);
-        list.add(0);
-        list.add(3);
-        list.add(-6);
+        GenericListFilter filter = new PositiveFilter();
+        ListFilterer filterer = new ListFilterer(filter);
 
-        List<Integer> expected = new ArrayList<>();
+        List<Integer> filtered = filterer.filter(list);
 
-        expected.add(4);
-        expected.add(3);
-
-        ListFilterer filterer = new ListFilterer(list);
-        List<Integer> filtered = filterer.filter(new PositiveFilter());
-
-        assertEquals(expected, filtered);
+        Assertions.assertEquals(expected, filtered);
     }
 
     @Test
-    public void filterDivisible() {
-        List<Integer> list = new ArrayList<>();
+    public void divisibleByFilter() {
+        List<Integer> list = Arrays.asList(3, 5, 6, 9, 1, 0, 2, 2);
+        List<Integer> expected = Arrays.asList(3, 6, 9, 0);
 
-        list.add(2);
-        list.add(3);
-        list.add(4);
-        list.add(0);
-        list.add(3);
-        list.add(-6);
+        GenericListFilter filter = new DivisibleByFilter(3);
+        ListFilterer filterer = new ListFilterer(filter);
 
-        List<Integer> expected = new ArrayList<>();
+        List<Integer> filtered = filterer.filter(list);
 
-        expected.add(3);
-        expected.add(0);
-        expected.add(3);
-        expected.add(-6);
-
-        ListFilterer filterer = new ListFilterer(list);
-        List<Integer> filtered = filterer.filter(new DivisibleByFilter(3));
-
-        assertEquals(expected, filtered);
+        Assertions.assertEquals(expected, filtered);
     }
 }

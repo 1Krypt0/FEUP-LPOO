@@ -1,22 +1,18 @@
 package com.aor.numbers;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
-interface IListDeduplicator {
-    public List<Integer> deduplicate();
+interface GenericListDeduplicator {
+    public List<Integer> deduplicate(List<Integer> list, GenericListSorter sorter);
 }
 
 /**
  * An utility class that removes duplicate numbers
  * from a list.
  */
-public class ListDeduplicator implements IListDeduplicator{
-    private final List<Integer> list;
-
-    public ListDeduplicator(List<Integer> list) {
-        this.list = list;
-    }
+public class ListDeduplicator implements GenericListDeduplicator {
 
     /**
      * Removes duplicate numbers from a list.
@@ -24,25 +20,9 @@ public class ListDeduplicator implements IListDeduplicator{
      * but without duplicates. The order of the numbers might
      * change.
      */
-    public List<Integer> deduplicate() {
-        ListSorter listSorter = new ListSorter(list);
-        List<Integer> sorted = listSorter.sort();
-        List<Integer> unique = new ArrayList<>();
+    public List<Integer> deduplicate(List<Integer> list, GenericListSorter sorter) {
 
-        Integer last = null;
-
-        for (Integer number : sorted)
-            if (!number.equals(last)) {
-                last = number;
-                unique.add(number);
-            }
-
-        return unique;
-    }
-
-    public List<Integer> deduplicate(IListSorter listSorter) {
-
-        List<Integer> sorted = listSorter.sort();
+        List<Integer> sorted = sorter.sort(list);
         List<Integer> unique = new ArrayList<>();
 
         Integer last = null;

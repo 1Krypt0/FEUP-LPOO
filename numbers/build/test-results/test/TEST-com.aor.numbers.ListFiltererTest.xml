@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.aor.numbers.ListFiltererTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-03-08T10:35:06" hostname="krypt0" time="0.002">
+<testsuite name="com.aor.numbers.ListFiltererTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-03-12T16:40:47" hostname="krypt0" time="0.002">
   <properties/>
-  <testcase name="filterPositive" classname="com.aor.numbers.ListFiltererTest" time="0.001"/>
-  <testcase name="filterDivisible" classname="com.aor.numbers.ListFiltererTest" time="0.0"/>
+  <testcase name="positiveFilter()" classname="com.aor.numbers.ListFiltererTest" time="0.001"/>
+  <testcase name="divisibleByFilter()" classname="com.aor.numbers.ListFiltererTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

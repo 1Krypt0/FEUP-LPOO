@@ -1,67 +1,52 @@
 package com.aor.numbers;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import static org.junit.Assert.*;
-
 public class ListDeduplicatorTest {
-
-    static class Stub implements IListSorter{
-
-        private List<Integer> list;
-
-        public Stub(List<Integer> list) {
-            this.list = list;
-            Collections.sort(this.list);
-        }
-
-        @Override
-        public List<Integer> sort() {
-            return list;
-        }
-    }
 
     @Test
     public void deduplicate() {
-        List<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(2);
-        list.add(4);
-        list.add(2);
-        list.add(5);
 
-        List<Integer> expected = new ArrayList<>();
-        expected.add(1);
-        expected.add(2);
-        expected.add(4);
-        expected.add(5);
+        class Stub implements GenericListSorter{
+            @Override
+            public List<Integer> sort(List<Integer> list) {
+                Collections.sort(list);
+                return list;
+            }
+        }
 
-        ListDeduplicator deduplicator = new ListDeduplicator(list);
-        List<Integer> distinct = deduplicator.deduplicate(new Stub(list));
+        List<Integer> list = Arrays.asList(1,2,4,2,5);
+        List<Integer> expected = Arrays.asList(1,2,4,5);
 
-        assertEquals(expected, distinct);
+        ListDeduplicator deduplicator = new ListDeduplicator();
+        GenericListSorter sorter = new ListSorter();
+        List<Integer> distinct = deduplicator.deduplicate(list,sorter);
+
+        Assertions.assertEquals(expected, distinct);
     }
 
     @Test
-    public void deduplicater() {
-        List<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(2);
-        list.add(4);
-        list.add(2);
+    public void distinct_bug_8726() {
+        List<Integer> list = Arrays.asList(1, 2, 4, 2);
+        List<Integer> expected = Arrays.asList(1, 2, 4);
 
-        List<Integer> expected = new ArrayList<>();
-        expected.add(1);
-        expected.add(2);
-        expected.add(4);
+        class Stub implements GenericListSorter{
+            @Override
+            public List<Integer> sort(List<Integer> list) {
+                Collections.sort(list);
+                return list;
+            }
+        }
 
-        ListDeduplicator deduplicator = new ListDeduplicator(list);
-        List<Integer> distinct = deduplicator.deduplicate();
+        GenericListDeduplicator deduplicator = new ListDeduplicator();
+        GenericListSorter sorter = new ListSorter();
+        List<Integer> distinct = deduplicator.deduplicate(list, sorter);
 
-        assertEquals(expected,distinct);
+        Assertions.assertEquals(expected, distinct);
     }
 }

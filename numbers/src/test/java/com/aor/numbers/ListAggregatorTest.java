@@ -1,127 +1,91 @@
 package com.aor.numbers;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
-import static org.junit.Assert.*;
-
 public class ListAggregatorTest {
 
-    public ListAggregator prep() {
-        List<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(2);
-        list.add(4);
-        list.add(2);
-        list.add(5);
-
-        ListAggregator aggregator = new ListAggregator(list);
-
-        return aggregator;
+    public List<Integer> prep() {
+        return Arrays.asList(1, 2, 4, 2 ,5);
     }
 
     @Test
     public void sum() {
 
-        ListAggregator aggregator = prep();
+        ListAggregator aggregator = new ListAggregator();
+        int sum = aggregator.sum(prep());
 
-        int sum = aggregator.sum();
-
-        assertEquals(14, sum);
+        Assertions.assertEquals(14, sum);
     }
 
     @Test
     public void max() {
 
-        ListAggregator aggregator = prep();
+        ListAggregator aggregator = new ListAggregator();
+        int max = aggregator.max(prep());
 
-        int max = aggregator.max();
-
-        assertEquals(5, max);
+        Assertions.assertEquals(5, max);
     }
 
     @Test
-    public void bugReport7263() {
-        //1st Step - Arrange
-        List<Integer> list = new ArrayList<>();
-        list.add(-1);
-        list.add(-4);
-        list.add(-5);
+    public void  max_bug_7263() {
+        List<Integer> list = Arrays.asList(-1, -4, -5);
 
-        ListAggregator aggregator = new ListAggregator(list);
+        ListAggregator aggregator = new ListAggregator();
+        int max = aggregator.max(list);
 
-        //2nd Step - Act
-        int max = aggregator.max();
-
-        //3rd Step - Assert
-        assertEquals(-1, max);
+        Assertions.assertEquals(-1, max);
     }
 
     @Test
     public void min() {
 
-        ListAggregator aggregator = prep();
+        ListAggregator aggregator = new ListAggregator();
+        int min = aggregator.min(prep());
 
-        int min = aggregator.min();
-
-        assertEquals(1, min);
-
-    }
-
-    static class Stub implements IListDeduplicator{
-
-        private List<Integer> list;
-
-        public Stub(List<Integer> list) {
-            this.list = list;
-            this.list = this.deduplicate();
-        }
-
-        @Override
-        public List<Integer> deduplicate() {
-            return new ArrayList<>(new HashSet<>(list));
-        }
+        Assertions.assertEquals(1, min);
     }
 
     @Test
     public void distinct() {
 
-        List<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(2);
-        list.add(4);
-        list.add(2);
-        list.add(5);
+        class Stub implements GenericListDeduplicator {
+            @Override
+            public List<Integer> deduplicate(List<Integer> list, GenericListSorter sorter) {
+                return new ArrayList<>(new HashSet<>(list));
+            }
+        }
 
-        ListAggregator aggregator = new ListAggregator(list);
+        ListAggregator aggregator = new ListAggregator();
+        ListDeduplicator deduplicator = new ListDeduplicator();
+        GenericListDeduplicator deduplicator1 = new Stub();
+        int distinct = aggregator.distinct(prep(), deduplicator);
 
-        IListDeduplicator deduplicator = Mockito.mock(IListDeduplicator.class);
-
-
-        int distinct = aggregator.distinct(new Stub(list));
-
-        assertEquals(4, distinct);
+        Assertions.assertEquals(4, distinct);
     }
 
     @Test
-    public void bugReport8726() {
-        //1st Step - Arrange
-        List<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(2);
-        list.add(4);
-        list.add(2);
+    public void distinct_bug_8726() {
+        List<Integer> list = Arrays.asList(1, 2, 4, 2);
 
-        ListAggregator aggregator = new ListAggregator(list);
+        class Stub implements GenericListDeduplicator {
+            @Override
+            public List<Integer> deduplicate(List<Integer> list, GenericListSorter sorter) {
+                return new ArrayList<>(new HashSet<>(list));
+            }
+        }
 
-        //2nd Step - Act
-        int distinct = aggregator.distinct(new Stub(list));
+        ListAggregator aggregator = new ListAggregator();
+        ListDeduplicator deduplicator = new ListDeduplicator();
+        GenericListDeduplicator deduplicator1 = new Stub();
+        int distinct = aggregator.distinct(list, deduplicator1);
 
-        //3rd Step - Assert
-        assertEquals(3, distinct);
+        Assertions.assertEquals(3, distinct);
     }
 }
