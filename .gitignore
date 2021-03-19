@@ -1,3 +1,5 @@
-helloworld/out/
-helloworld/.idea/
-helloworld/*iml
+**/.idea/
+**/.gradle/
+**/out/
+**/build/
+**/*.iml
